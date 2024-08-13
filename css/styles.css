@@ -1,0 +1,398 @@
+:root {
+    --white: #F2F2F2;
+    --accent: #dca530;
+    --hover: #fcc650;
+    --dark: #181413;
+    --pop: #684551;
+}
+/* Universal Styles */
+body {
+    background-color: var(--white);
+    font: 1rem/1.5 "Lato", Arial, sans-serif;
+}
+/* Utility Classes */
+.inner-container {
+    max-width: 1024px;
+    margin: auto;
+}
+.sr-only {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+}
+/* Typography */
+h1 {
+    font-family: 'Hurricane', cursive;
+    font-weight: 100;
+    font-size: 4.5rem;
+}
+header h2 {
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    letter-spacing: 0.2rem;
+    margin-top: -1rem;
+}
+header h3{
+    font-weight: 500;
+    margin-top: 0.5rem;
+    padding-right: 53rem;
+}
+/* Header */
+header {
+    background-color: #684551;
+    color: #F2F2F2;
+    text-align: center;
+    height: 11rem;
+}
+header img{
+    width: 2.5rem;
+}
+header div{
+    display: flex;
+    padding-left: 25rem;
+}
+header button {
+    background-color: #684551;
+    color: #F2F2F2;
+    border: none;
+    border-radius: 0.15rem;
+    width: 5.65rem;
+    height: 2.75rem;
+    font-size: 1.15rem;
+}
+header button:hover{
+    background-color: #DCA530;
+    color: #684551;
+}
+/* Hero Banner */
+.hero {
+    background: url(../img/hero.webp) center / cover;
+    height: 45rem;
+    color: #F2F2F2;
+}
+.hero h2{
+    font-weight: 100;
+    text-align: center;
+    font-size: 4rem;
+    line-height: 1.75rem;
+    padding-top: 12rem;
+}
+.left {
+    display: block;
+    text-align: left;
+}
+.right {
+    display: block;
+    text-align: right;
+}
+.hero div {
+    margin: auto;
+    max-width: 29rem;
+}
+.hero div p{
+    font-size: 1.35rem;
+    width: 30rem;
+    line-height: 1.75rem;
+    margin-top: 5rem;
+}
+.hero button{
+    background-color: #DCA530;
+    color: #684551;
+    border: none;
+    border-radius: 0.15rem;
+    width: 10.25rem;
+    height: 2.5rem;
+    font-size: 1.15rem;
+    margin-top: 3rem;
+    margin-left: 9.25rem;
+}
+/* Parallax */
+.parallax {
+    background: url(../img/splash.webp) center / cover no-repeat;
+    background-attachment: fixed;
+    height: 65rem;
+    position: relative;
+}
+.parallax div {
+    padding-top: 16rem;
+    padding-left: 60rem;
+    position: relative;
+    z-index: 2;
+}
+.parallax h2 {
+    font-weight: 300;
+    width: 30rem;
+    font-size: 2rem;
+}
+.parallax p {
+    width: 30rem;
+}
+/* Horizontal Scroll */
+.horizontal{
+    height: 60rem;
+}
+.horizontal h2{
+    text-transform: uppercase;
+    font-weight: 100;
+    font-size: 4.25rem;
+    text-align: center;
+    margin-top: 6rem;
+    margin-bottom: 3.5rem;
+}
+.body-copy p {
+    font-size: 1.25em;
+    line-height: 1.3;
+    opacity: 0.85;
+}
+.scroll-wrapper {
+    display: flex;
+    overflow-x: scroll;
+}
+.card {
+    flex: 0 0 24rem;
+    margin: 2rem 1rem;
+    background-color: #ffffff;
+    height: 42rem;
+}
+.card img {
+    border-radius: 0.2rem 0.2rem 0 0;
+    padding: 1rem;
+    height: 25rem;
+}
+.card-body h3{
+    text-align: center;
+}
+.card-body{
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.title-1{
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #684551
+}
+.title-2{
+    font-size: 2rem;
+    font-weight: 300;
+    margin-top: -0.5rem;
+}
+.card-body button{
+    background-color: #DCA530;
+    color: #684551;
+    border: none;
+    border-radius: 0.15rem;
+    width: 22rem;
+    height: 2.5rem;
+    font-size: 1.15rem;
+    margin-top: 3.5rem;
+}
+.scroll-wrapper {
+    scrollbar-color: #DCA530 #eee;
+    scrollbar-width: auto;
+}
+/* Footer */
+footer{
+    background-color: #684551;
+    color: #F2F2F2;
+    height: 33rem;
+}
+.disclaimer{
+    text-align: center;
+    font-size: 0.8rem;
+    line-height: 2rem;
+}
+.sign{
+    display: flex;
+    padding-left: 27rem;
+    padding-top: 3rem;
+}
+.newsletter{
+    width: 30rem;
+}
+.newsletter h2{
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-bottom: 0.75rem;
+}
+.buttonin {
+    padding-top: 2rem;
+}
+.buttonin input{
+    width: 28rem;
+    height: 2.5rem;
+    margin-right: -1rem;
+}
+.buttonin button{
+    height: 2.5rem;
+    background-color: #DCA530;
+    color: #684551;
+    border: none;
+    font-weight: 400;
+}
+.contents {
+    display: flex;
+    line-height: 2.5rem;
+    padding-top: 2rem;
+    padding-left: 23.05rem;
+    padding-bottom: 3.5rem;
+}
+.contents ul {
+    padding-right: 15rem;
+}
+.contents-h{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #DCA530;
+    font-size: 1.5rem;
+}
+.contents-p{
+    text-decoration: none;
+    color: #F2F2F2;
+}
+@media screen and (max-width: 50rem) {
+    h1 {
+        font-size: 7.5rem;
+    }
+    header {
+        height: 17rem;
+    }
+    header h2 {
+        font-size: 2.1rem;
+        margin-top: -2rem;
+    }
+    header div {
+        padding-left: 2rem;
+    }
+    header img {
+        width: 3.5rem;
+    }
+    header h3 {
+        margin-top: 0.05rem;
+        padding-right: 22rem;
+        font-size: 2rem;
+    }
+    header button {
+        width: 8.65rem;
+        height: 3.75rem;
+        font-size: 1.65rem;
+    }
+    .hero {
+        height: 90rem;
+    }
+    .hero div{
+        max-width: 47rem;
+    }
+    .hero h2 {
+        font-size: 7rem;
+        line-height: 3rem;
+        padding-top: 19rem;
+    }
+    .right{
+        width: 35rem;
+        margin-left: 7rem;
+        line-height: 7rem;
+        text-align: left;
+    }
+    .hero div p {
+        font-size: 2.65rem;
+        width: 47rem;
+        line-height: 3.5rem;
+        margin-top: 6rem;
+    }
+    .hero button {
+        width: 19.25rem;
+        height: 4.5rem;
+        font-size: 2.15rem;
+        margin-top: 6rem;
+        margin-left: 13.8rem;
+    }
+    .parallax{
+        background: url(../img/splash-mobile.webp) center / cover no-repeat;
+        background-attachment: fixed;
+        height: 100rem;
+        position: relative;
+    }
+    .parallax div {
+        padding-top: 0rem;
+        padding-left: 25rem;
+    }
+    .parallax h2 {
+        width: 20rem;
+        font-size: 3rem;
+    }
+    .parallax p {
+        width: 21rem;
+        font-size: 1.5rem;
+    }
+    .horizontal h2 {
+        font-size: 7.25rem;
+        line-height: 7rem;
+        margin-top: 12rem;
+        margin-bottom: 6.5rem;
+    }
+    .card {
+        flex: 0 0 46rem;
+        height: 75rem;
+    }
+    .card img {
+        padding: 2rem;
+        height: 46rem;
+    }
+    .title-1 {
+        font-size: 1.8rem;
+        font-weight: 300;
+    }
+    .title-2 {
+        font-size: 4rem;
+        margin-top: -1.5rem;
+    }
+    .card p{
+        font-size: 1.85rem;
+    }
+    .card button{
+        margin-left: 0.5rem;
+        width: 42.5rem;
+        height: 4.5rem;
+        font-size: 2rem;
+        margin-top: 3rem;
+    }
+    footer{
+        margin-top: 50rem;
+        height: 82rem;
+    }
+    .sign{
+        display: grid;
+        padding-left: 2.75rem;
+    }
+    .newsletter h2 {
+        font-size: 2rem;
+    }
+    .newsletter p {
+        font-size: 1.25rem;
+    }
+    .buttonin{
+        display: flex;
+    }
+    .contents{
+        display: grid;
+        padding-left: 0.05rem;
+    }
+    .contents-h{
+        font-size: 2rem;
+    }
+    .contents-p{
+        font-size: 1.25rem;
+        line-height: 3rem;
+    }
+    .disclaimer{
+        font-size: 1rem;
+        width: 40rem;
+        line-height: 2rem;
+        padding-left: 12rem;
+    }
+    .disclaimer p{
+        padding-bottom: 1rem;
+    }
+}
